@@ -25,5 +25,4 @@ export default function Logon(){
         <img src={heroesImg} alt="Heroes"/>
         </div>
     );
-    
 }
