@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+
+import Header from './Header';
+
+import Logon from './pages/Logon';
+
+import Routes from './routes'
+
+import './global.css'
+// JSX(Javascript XML)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes></Routes>
   );
+  // let [counter, setCounter] = useState(0); //retorna array[valor,funcaoDeAtualizacao]
+
+  // function increment(){
+  //   setCounter(++counter);
+    
+  //   console.log(counter);
+  // }
+
+  // return (
+  //   <div>
+  //   <Logon></Logon>
+  //   <Header>Contador: {counter}</Header>
+  //   <button onClick={increment}>aumentar</button>
+  //   </div>
+  // );
 }
 
 export default App;
